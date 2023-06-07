@@ -1,0 +1,26 @@
+.dsa-h2{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.8rem;
+    display: flex;
+    margin-left: 2rem;
+}
+
+.dsa-icon-span{
+    margin-top: 0.8rem;
+    display: block;
+}
+
+.dsa-heading-span{
+    margin-top: 0.7rem;
+}
+
+.dsa-list{
+    list-style-type: none;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.dsa-list li{
+    list-style: none;
+}

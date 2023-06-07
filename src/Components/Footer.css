@@ -1,0 +1,52 @@
+.footer-div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.footer-h4{
+    font-weight: bolder;
+}
+
+.footer-content{
+    line-height: 2rem;
+    width: 15rem;
+    font-size: 1rem;
+    text-align: left;
+    color: #f2f2f2;
+    opacity: 0.8;
+}
+
+
+.footer-content li a:link{
+    text-decoration: none;
+}
+
+.footer-content li a{
+    color: #f2f2f2;;
+}
+
+.footer-content li a:hover{
+    color: burlywood;
+}
+
+.footer-reachOut{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.footer-reachOut a:hover{
+    color: burlywood;
+}
+
+.footer-reachOut a{
+    color: #f2f2f2;;
+
+}
+
+.footer-image{
+    height: 2rem;
+    width: 2rem;
+}
+

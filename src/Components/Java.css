@@ -1,0 +1,27 @@
+.java-h2{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.8rem;
+    display: flex;
+    margin-left: 2rem;
+}
+
+.java-icon-span{
+    margin-top: 0.8rem;
+    display: block;
+}
+
+.java-heading-span{
+    margin-top: 0.7rem;
+}
+
+.java-list{
+    list-style-type: none;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.java-list li{
+    list-style: none;
+}
+

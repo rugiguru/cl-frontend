@@ -1,0 +1,16 @@
+.RealEngineering-h2{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.8rem;
+    display: flex;
+   margin-left: 2rem;
+}
+
+.RealEngineering-icon-span{
+    margin-top: 0.8rem;
+    display: block;
+}
+
+.RealEngineering-heading-span{
+    margin-top: 0.7rem;
+}

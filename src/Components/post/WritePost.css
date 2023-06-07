@@ -1,0 +1,42 @@
+/**** Parsed   ****/
+pre .string {
+    color:#A1E46D;
+}
+pre  .special {
+    color:#D6665D;
+}
+pre  .special-js {
+    color:#6DE4D1;
+}
+pre  .special-js-glob {
+    color:#A1E46D;
+    font-weight:bold;
+}
+pre  .special-comment{
+    color:#aaa;
+}
+pre  .special-js-meth {
+    color:#E46D8A;
+}
+pre  .special-html {
+    color:#E4D95F;
+}
+pre  .special-sql {
+    color:#1D968C;
+}
+pre  .special-php{
+    color:#597EA7;
+}
+
+pre {
+    background-color: black;
+color: wheat;
+padding: 1rem;
+line-height: 0.5;
+}
+
+
+/* background-color: black;
+color: wheat;
+padding: 1rem;
+line-height: 0.5; */

@@ -1,0 +1,24 @@
+.latestPosts{
+    background-color: rgb(244, 240, 250);
+}
+
+.latestPosts-h2{
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.latestPosts-icon-span{
+    margin-top: 0.8rem;
+    display: block;
+}
+
+.latestPosts-heading-span{
+    margin-top: 0.7rem;
+}
+
+.latestPosts-list{
+    /* margin-left: 2rem; */
+    font-size: 1.3rem;
+}

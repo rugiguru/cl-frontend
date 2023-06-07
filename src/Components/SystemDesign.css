@@ -1,0 +1,26 @@
+.systemDesign-h2{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.8rem;
+    display: flex;
+   margin-left: 2rem;
+}
+
+.systemDesign-icon-span{
+    margin-top: 0.8rem;
+    display: block;
+}
+
+.systemDesign-heading-span{
+    margin-top: 0.7rem;
+}
+
+.systemDesign-list{
+    list-style-type: none;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.systemDesign-list li{
+    list-style: none;
+}
