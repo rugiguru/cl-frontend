@@ -26,15 +26,15 @@ const Footer = () => {
           <li><a href="#">DSA & Algo</a></li>
           <li><a href="#">Low Level Designing</a></li>
           <li><a href="#">High Level Designing</a></li>
-          <li><a href={`${process.env.REACT_APP_API_URL}/page-detail?id=64835dc0752339739aa90982`} >Book Shelf</a></li>
+          <li><a href={`${process.env.REACT_APP_UI_URL}/page-detail?id=64835dc0752339739aa90982`} >Book Shelf</a></li>
           </ul>
         </div>
         <div>
         <h4 className="footer-h4">Meta Links</h4>
         <ul className="footer-content">
-            <li><a href={`${process.env.REACT_APP_API_URL}/page-detail?id=64835d77752339739aa9097f`}>About Us</a></li>
+            <li><a href={`${process.env.REACT_APP_UI_URL}/page-detail?id=64835d77752339739aa9097f`}>About Us</a></li>
             <li><a href="">Contact Us</a></li>
-            <li><a href={`${process.env.REACT_APP_API_URL}/page-detail?id=64835d85752339739aa90980`}>Advertise</a></li>
+            <li><a href={`${process.env.REACT_APP_UI_URL}/page-detail?id=64835d85752339739aa90980`}>Advertise</a></li>
             <li><a href="">Privacy Policy</a></li>
           </ul>
         </div>
