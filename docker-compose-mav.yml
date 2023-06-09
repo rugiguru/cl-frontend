@@ -1,0 +1,54 @@
+# This is not the total configurations, this will merge with docker-compose.override.yml file (which is copeid from environment)
+version: "3.8"
+services:
+  react:
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - CI=true
+    build:
+      args:
+        user: root
+        uid: 0
+      context: ./frontend/react
+    image: mav-react
+    container_name: mav-react
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+      - "8888:8888"
+    stdin_open: true
+    tty: true
+    depends_on:
+      - nginx
+      - laravel
+    volumes:
+      - ./frontend/react:/var/www/html
+      - /var/www/html/node_modules
+      - ./docker-compose/certs/:/usr/share/certs/
+    networks:
+      - app-network
+  laravel:
+    build:
+      args:
+        user: root
+        uid: 0
+      context: ./backend/laravel
+    image: mav-laravel
+    container_name: mav-laravel
+    restart: unless-stopped
+    depends_on:
+      - nginx
+    networks:
+      - app-network
+  nginx:
+    image: nginx:1.21.4-alpine
+    container_name: mav-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge

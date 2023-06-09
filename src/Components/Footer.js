@@ -26,6 +26,7 @@ const Footer = () => {
           <li><a href="#">DSA & Algo</a></li>
           <li><a href="#">Low Level Designing</a></li>
           <li><a href="#">High Level Designing</a></li>
+          <li><a href="#">Book Shelf</a></li>
           </ul>
         </div>
         <div>

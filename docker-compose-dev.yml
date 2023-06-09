@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  cl_db:
+    image: mongo
+    container_name: cl_db
+    restart: always
+    volumes:
+      - cl_db_data:/data/db
+  
+  cl_backend:
+    container_name: cl_backend
+    build: ./backend
+    ports:
+      - 4002:3000
+    volumes:
+      - ./backend:/usr/src/app
+      - /usr/src/app/node_modules/
+    restart: always
+    environment:
+      PORT: 3000
+      DATABASE_PATH: mongodb://cl_db:27017
+      DB_NAME: coderlogs
+    depends_on:
+      - cl_db
+
+  cl_frontend:
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - CI=true
+    build: ./frontend
+      # context: ./frontend
+    # image: cl-react
+    container_name: cl_frontend
+    restart: unless-stopped
+    ports:
+      - "4001:3000"
+    stdin_open: true
+    tty: true
+    depends_on:
+      - cl_backend
+    volumes:
+      - ./frontend:/usr/src/app
+      - /usr/src/app/node_modules
+
+volumes:
+  cl_db_data: {}
+
