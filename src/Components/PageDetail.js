@@ -2,16 +2,14 @@ import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./PageDetail.css";
-import LatestPosts from "./LatestPosts";
 import Sidebar from "./Sidebar";
 import { CgProfile } from "react-icons/cg";
 import { RxUpdate } from "react-icons/rx";
 import { useState } from "react";
 import axios from "axios";
 import { marker } from "./common/highlighter";
-import dateFormat from 'dateformat';
+import dateFormat from "dateformat";
 import { useNavigate } from "react-router-dom";
-
 
 const PageDetail = () => {
   const [postDetail, setPostDetail] = useState({});
@@ -20,8 +18,8 @@ const PageDetail = () => {
   const navigate = useNavigate();
 
   const handleEditPost = () => {
-    navigate(`/write-post`, {state : {id : postDetail._id}});
-  }
+    navigate(`/write-post`, { state: { id: postDetail._id } });
+  };
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -38,23 +36,17 @@ const PageDetail = () => {
       });
   }, []);
 
-  useEffect(() =>{
-      if(postDetail.body){
-        setDisplayBody(marker(postDetail.body));
-      }
-    
-  },[postDetail.body]);
+  useEffect(() => {
+    if (postDetail.body) {
+      setDisplayBody(marker(postDetail.body));
+    }
+  }, [postDetail.body]);
 
-  useEffect(() =>{
-    if(postDetail.problemStatement){
+  useEffect(() => {
+    if (postDetail.problemStatement) {
       setProblemStatement(marker(postDetail.problemStatement));
     }
-   
-},[postDetail.problemStatement]);
-
-
-
-
+  }, [postDetail.problemStatement]);
 
   return (
     <div className="page-container">
@@ -64,8 +56,14 @@ const PageDetail = () => {
       <div className="pageDetail-content">
         <div className="pageDetail-latestPosts">
           <header className="pagedDetail-header">
-            <h1 className="pageDetail-h1">{postDetail.title} {"  "} {process.env.NODE_ENV == "development" ? <button onClick={handleEditPost}>edit</button> : 
-            <button onClick={handleEditPost}>edit</button>} </h1>
+            <h1 className="pageDetail-h1">
+              {postDetail.title} {"  "}{" "}
+              {process.env.NODE_ENV == "development" ? (
+                <button onClick={handleEditPost}>edit</button>
+              ) : (
+                <button onClick={handleEditPost}>edit</button>
+              )}{" "}
+            </h1>
             <div className="pageDetail-inner-header">
               <h6 className="pageDetail-h6">
                 <span className="pageDetail-icon">
@@ -77,29 +75,27 @@ const PageDetail = () => {
                 <span className="pageDetail-icon">
                   <RxUpdate />
                 </span>
-             Last Updated: {dateFormat(postDetail.updatedAt, "mmmm dS, yyyy")  }
-            
+                Last Updated:{" "}
+                {dateFormat(postDetail.updatedAt, "mmmm dS, yyyy")}
               </h6>
               <hr />
             </div>
 
             <hr />
 
-            <div 
-            className="post-problemstatement"
-            dangerouslySetInnerHTML={{ __html: problemStatement.replace(/\n/g, '<br />') }}
-            >
+            <div
+              className="post-problemstatement"
+              dangerouslySetInnerHTML={{
+                __html: problemStatement.replace(/\n/g, "<br />"),
+              }}
+            ></div>
 
-            </div>
-
-
-            <div 
-            className="post-body"
-            dangerouslySetInnerHTML={{ __html: displayBody.replace(/\n/g, '<br />') }}
-            >
-
-            </div>
-
+            <div
+              className="post-body"
+              dangerouslySetInnerHTML={{
+                __html: displayBody.replace(/\n/g, "<br />"),
+              }}
+            ></div>
           </header>
         </div>
         <Sidebar />
