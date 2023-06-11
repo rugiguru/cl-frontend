@@ -22,7 +22,7 @@ const LatestPosts = (props) => {
       <div className="latestPosts-list">
         <ul style={{ listStyleType: "none" }}>
           {props.posts.map((post, index) => {
-            return (
+           return ( 
               <li key={index}>
                 <a onClick={()=>navigateToPagedetail(post._id)} href="" >
                   {post.title}

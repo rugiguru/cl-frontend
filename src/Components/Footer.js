@@ -20,7 +20,7 @@ const Footer = () => {
           </p>
         </div>
         <div>
-        <h4 className="footer-h4">Tutorial Series</h4>
+        <h4 className="footer-h4">Explore</h4>
           <ul className="footer-content">
           <li><a href="#">Interview</a></li>
           <li><a href="#">DSA & Algo</a></li>
@@ -33,7 +33,7 @@ const Footer = () => {
         <h4 className="footer-h4">Meta Links</h4>
         <ul className="footer-content">
             <li><a href={`${process.env.REACT_APP_UI_URL}/page-detail?id=64835d77752339739aa9097f`}>About Us</a></li>
-            <li><a href="">Contact Us</a></li>
+            {/* <li><a href="">Contact Us</a></li> */}
             <li><a href={`${process.env.REACT_APP_UI_URL}/page-detail?id=64835d85752339739aa90980`}>Advertise</a></li>
             <li><a href="">Privacy Policy</a></li>
           </ul>

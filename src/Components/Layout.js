@@ -18,7 +18,10 @@ const Layout = () => {
       .get(`${process.env.REACT_APP_API_URL}/posts`)
       .then((res) => {
         setPosts(res.data);
-        console.log(res.data);
+        // console.log(res.data);
+        // res.data.tags.filter(dt => {
+        //   return dt.contains("java") || dt.contains("dsa")
+        // } )
       })
       .catch((err) => {
         console.log(err);
