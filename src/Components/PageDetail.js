@@ -61,7 +61,7 @@ const PageDetail = () => {
               {process.env.NODE_ENV == "development" ? (
                 <button onClick={handleEditPost}>edit</button>
               ) : (
-                <button onClick={handleEditPost}>edit</button>
+                
               )}{" "}
             </h1>
             <div className="pageDetail-inner-header">

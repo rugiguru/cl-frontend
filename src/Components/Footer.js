@@ -4,8 +4,16 @@ import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import { BsTwitter } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+
+  const navigate = useNavigate();
+
+  const navigateToPagedetail = (postId) => {
+    navigate(`/page-detail?id=${postId}`);
+  };
+
   return (
     <footer>
       <div className="footer-div">
@@ -26,16 +34,16 @@ const Footer = () => {
           <li><a href="#">DSA & Algo</a></li>
           <li><a href="#">Low Level Designing</a></li>
           <li><a href="#">High Level Designing</a></li>
-          <li><a href={`${process.env.REACT_APP_UI_URL}/page-detail?id=64835dc0752339739aa90982`} >Book Shelf</a></li>
+          <li><a onClick={()=>navigateToPagedetail("64835dc0752339739aa90982")} >Book Shelf</a></li>
           </ul>
         </div>
         <div>
         <h4 className="footer-h4">Meta Links</h4>
         <ul className="footer-content">
-            <li><a href={`${process.env.REACT_APP_UI_URL}/page-detail?id=64835d77752339739aa9097f`}>About Us</a></li>
+            <li><a onClick={()=>navigateToPagedetail("64835d77752339739aa9097f")} >About Us</a></li>
             {/* <li><a href="">Contact Us</a></li> */}
-            <li><a href={`${process.env.REACT_APP_UI_URL}/page-detail?id=64835d85752339739aa90980`}>Advertise</a></li>
-            <li><a href="">Privacy Policy</a></li>
+            <li><a onClick={()=>navigateToPagedetail("64835d85752339739aa90980")} >Advertise</a></li>
+            <li><a onClick={()=>navigateToPagedetail("64835d9a752339739aa90981")} >Privacy Policy</a></li>
           </ul>
         </div>
         <div>
