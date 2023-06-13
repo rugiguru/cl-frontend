@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/rugiguru/cl-frontend/static/css/main.ecd324be.css",
-    "main.js": "/rugiguru/cl-frontend/static/js/main.9ea115cf.js",
+    "main.js": "/rugiguru/cl-frontend/static/js/main.f7d01dc7.js",
     "static/js/787.435fefad.chunk.js": "/rugiguru/cl-frontend/static/js/787.435fefad.chunk.js",
     "index.html": "/rugiguru/cl-frontend/index.html",
     "main.ecd324be.css.map": "/rugiguru/cl-frontend/static/css/main.ecd324be.css.map",
-    "main.9ea115cf.js.map": "/rugiguru/cl-frontend/static/js/main.9ea115cf.js.map",
+    "main.f7d01dc7.js.map": "/rugiguru/cl-frontend/static/js/main.f7d01dc7.js.map",
     "787.435fefad.chunk.js.map": "/rugiguru/cl-frontend/static/js/787.435fefad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ecd324be.css",
-    "static/js/main.9ea115cf.js"
+    "static/js/main.f7d01dc7.js"
   ]
 }
