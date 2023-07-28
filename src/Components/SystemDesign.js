@@ -13,7 +13,7 @@ const SystemDesign = () => {
     <span className="systemDesign-heading-span"> System Design </span>
   </h2>
 
-  <ul className="systemDesign-list">
+  <ul className="systemDesign-list ">
         <li>
           <a href="#">Basics Of System Design</a>
         </li>

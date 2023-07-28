@@ -19,6 +19,36 @@
 }
 
 .latestPosts-list{
-    /* margin-left: 2rem; */
     font-size: 1.3rem;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .latestPosts-h2  {
+        font-size: 1.4rem;
+    }
+    .latestPosts-ul{
+        font-size: 1rem;
+    }
+  }
+
+
+  @media (min-width:769px){
+    .latestPosts-h2{
+        font-size: 1.4rem;
+    }
+    .latestPosts-list{
+        font-size: 1.1rem;
+    }
+    .latestPosts-list{
+        text-align: unset;
+    }
+  }
+/* @media screen and (min-device-width: 1000px) and (max-device-width: 1366px) { 
+    .latestPosts-h2  {
+        font-size: 1.6rem;
+    }
+    .latestPosts-list{
+        font-size: 1.1rem;
+    }
+ } */

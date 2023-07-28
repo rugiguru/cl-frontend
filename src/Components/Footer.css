@@ -50,3 +50,49 @@
     width: 2rem;
 }
 
+
+@media only screen and (max-width: 768px) {
+    .footer-h4{
+        font-weight: unset;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .footer-image{
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+    .footer-content{
+        line-height: 1.5rem;
+        width: 20vw;
+        font-size: 0.8rem;
+    }
+  }
+
+/* @media screen and (min-device-width: 1281px) and (max-device-width: 1366px) { 
+ 
+    .footer-h4{
+        font-size: 1.2rem;
+    }
+    .footer-content{
+        font-size: 0.8rem;
+    }
+    .footer-image{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    
+  } */
+
+  @media (min-width:769px){
+    .footer-h4{
+        font-size: 1.2rem;
+    }
+    .footer-content{
+        font-size: 0.8rem;
+    }
+    .footer-image{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    
+  }

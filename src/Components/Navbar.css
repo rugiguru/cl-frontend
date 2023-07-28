@@ -3,6 +3,7 @@
   font-size: 1.3rem;
   display: flex;
   justify-content: space-evenly;
+  position: relative;
 }
 
 .navbar-ul {
@@ -14,6 +15,7 @@
 .navbar-ul li {
   margin: 1rem 2rem;
   list-style: none;
+  /* width: 100%; */
 }
 .navbar-ul li a {
   color: #ffffff;
@@ -32,3 +34,78 @@
   color: #ffffff;
   font-size: 1.7rem;
 } 
+
+
+  .hamburger {
+   /* removes default border on button element */
+    /* border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #283b8b; */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+ /* positions the icon to the right and center aligns it vertically */
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+  }
+  /* .hamburger:hover {
+    background-color: #2642af;
+  } */
+
+
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .navbar-ul-column {
+    /* display: block; */
+    /* display: none; */
+
+     /* stacks the li tags vertically  */
+    flex-direction: column;
+    /* makes menu span full height and width */
+    width: 100%;
+    height: 15vh;
+    border-top: 1px solid black;
+    background-color: rgb(54, 62, 91);
+    text-align: center;
+  }
+
+  .navbar-ul-none {
+    display: none;
+  }
+
+  /* .navbar-ul-expanded{
+    display: block;
+  } */
+
+  .navbar-logo {
+    font-size: 1.5rem;
+  } 
+  .navbar-ul li a {
+    font-size: 1rem;
+  }
+}
+
+/* @media screen and (min-device-width: 1281px) and (max-device-width: 1366px) { 
+  .navbar {
+    font-size: 1.1rem;
+  }
+  .navbar-logo {
+    font-size: 1.5rem;
+  } 
+} */
+
+@media (min-width:769px){
+  .navbar {
+    font-size: 1.1rem;
+  }
+  .navbar-logo {
+    font-size: 1.5rem;
+  } 
+}

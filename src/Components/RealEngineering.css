@@ -14,3 +14,26 @@
 .RealEngineering-heading-span{
     margin-top: 0.7rem;
 }
+
+
+@media only screen and (max-width: 768px) {
+    /* .RealEngineering-list {
+      text-align: center;
+      font-size: 1rem;
+    } */
+        .RealEngineering-h2  {
+            font-size: 1.4rem;
+        }
+  }
+/* @media screen and (min-device-width: 1281px) and (max-device-width: 1366px) { 
+    .RealEngineering-h2{
+        font-size: 1.6rem;
+    }
+ } */
+
+ @media (min-width:769px){
+    .RealEngineering-h2{
+        font-size: 1.4rem;
+    }
+  
+ }
