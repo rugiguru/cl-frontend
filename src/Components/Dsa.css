@@ -24,3 +24,39 @@
 .dsa-list li{
     list-style: none;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    .dsa-list {
+      text-align: center;
+      font-size: 1rem;
+    }
+        .dsa-h2  {
+            font-size: 1.4rem;
+        }
+  }
+
+/* @media screen and (min-device-width: 1281px) and (max-device-width: 1366px) { 
+    .dsa-h2{
+        font-size: 1.6rem;
+    }
+    .dsa-list{
+        font-size: 1.1rem;
+    }
+    .dsa-list{
+        text-align: unset;
+    }
+ } */
+
+ @media (min-width:769px){
+    .dsa-h2{
+        font-size: 1.4rem;
+    }
+    .dsa-list{
+        font-size: 1.1rem;
+    }
+    .dsa-list{
+        text-align: unset;
+    }
+ }

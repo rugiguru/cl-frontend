@@ -42,7 +42,10 @@ const Sidebar = () => {
   };
 
   return (
-    <div id="sidebar">
+    <div 
+    // id="sidebar"
+    id="sidebar-2" class="box"
+    >
       <form className="sidebar-search-form">
         <input
           type="text"

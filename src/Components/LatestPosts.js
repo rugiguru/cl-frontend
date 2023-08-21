@@ -12,7 +12,9 @@ const LatestPosts = (props) => {
   };
 
   return (
-    <main className="latestPosts">
+    <main 
+    // className="latestPosts" 
+    id="recent-posts" >
       <h2 className="latestPosts-h2">
         <span className="latestPosts-icon-span">
           <FaRegClock />
@@ -20,7 +22,7 @@ const LatestPosts = (props) => {
         <span className="latestPosts-heading-span"> Recent Posts </span>
       </h2>
       <div className="latestPosts-list">
-        <ul style={{ listStyleType: "none" }}>
+        <ul className="latestPosts-ul" style={{ listStyleType: "none" }}>
           {props.posts.map((post, index) => {
            return ( 
               <li key={index}>

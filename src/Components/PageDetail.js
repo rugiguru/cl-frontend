@@ -58,11 +58,9 @@ const PageDetail = () => {
           <header className="pagedDetail-header">
             <h1 className="pageDetail-h1">
               {postDetail.title} {"  "}{" "}
-              {process.env.NODE_ENV == "development" ? (
+              {(process.env.NODE_ENV == "development" || process.env.NODE_ENV == "production")? (
                 <button onClick={handleEditPost}>edit</button>
-              ) : (
-                <button onClick={handleEditPost}>edit</button>
-              )}{" "}
+              ) : ""}{" "}
             </h1>
             <div className="pageDetail-inner-header">
               <h6 className="pageDetail-h6">

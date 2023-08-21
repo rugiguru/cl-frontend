@@ -1,6 +1,6 @@
 .systemDesign-h2{
     font-weight: bold;
-    text-align: center;
+    /* text-align: center; */
     margin-top: 0.8rem;
     display: flex;
    margin-left: 2rem;
@@ -24,3 +24,38 @@
 .systemDesign-list li{
     list-style: none;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .systemDesign-list {
+      text-align: center;
+      font-size: 1rem;
+    }
+    .systemDesign-h2{
+        font-size: 1.4rem;
+    }
+  }
+
+/* @media screen and (min-device-width: 1281px) and (max-device-width: 1366px) { 
+    .systemDesign-h2{
+        font-size: 1.4rem;
+    }
+    .systemDesign-list{
+        font-size: 1.1rem;
+    }
+    .systemDesign-list{
+        text-align: unset;
+    }
+ } */
+
+ @media (min-width:769px){
+    .systemDesign-h2{
+        font-size: 1.4rem;
+    }
+    .systemDesign-list{
+        font-size: 1.1rem;
+    }
+    .systemDesign-list{
+        text-align: unset;
+    }
+ }

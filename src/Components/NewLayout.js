@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import LatestPosts from "./LatestPosts";
-import "./Layout.css";
+// import "./Layout.css";
+import "./NewLayout.css";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Java from "./Java";
@@ -10,7 +11,7 @@ import Footer from "./Footer";
 import axios from "axios";
 import RealEngineering from "./RealEngineering";
 
-const Layout = () => {
+const NewLayout = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -29,20 +30,31 @@ const Layout = () => {
   }, []);
 
   return (
-    <div className="main-container">
+    <div class="test-container">
+      {/* <nav>navbar</nav> */}
       <Navbar />
+
+      {/* <div id="recent-posts" class="box">recent-posts</div> */}
       <LatestPosts posts={posts} />
+
+      {/* <div id="sidebar-2" class="box">sidebar-2</div> */}
       <Sidebar />
+
+      {/* <div id="java" class="box">java</div> */}
       <Java />
+
+      {/* <div id="dsa" class="box">dsa</div> */}
       <Dsa />
-      <div id="sidebar2">
-        {/* sidebar2 */}
-        </div>
+
+      {/* <div id="realEngineer" class="box">realEngineer</div>
+      <div id="systemDesign" class="box">systemDesign</div> */}
+
       <RealEngineering />
       <SystemDesign />
       <Footer />
+      {/* <footer>footer</footer> */}
     </div>
   );
 };
 
-export default Layout;
+export default NewLayout;

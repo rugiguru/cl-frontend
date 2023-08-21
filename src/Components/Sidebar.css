@@ -5,9 +5,9 @@
 }
 
 .sidebar-search-btn {
-  width: 4rem;
   background-color: #363e5b;
   color: white;
+  border: 0px;
 }
 
 .sidebar-search-btn :hover {
@@ -16,7 +16,6 @@
 }
 
 .sidebar-search-input {
-  width: 18rem;
   height: 3rem;
 }
 
@@ -30,7 +29,7 @@
 .sidebar-email-input {
   margin-bottom: 1rem;
   height: 2.5rem;
-  width: 18rem;
+  width: 13rem;
   align-items: center;
 }
 
@@ -40,7 +39,7 @@
   width: 13.5rem;
   cursor: pointer;
   height: 2.5rem;
-  width: 18rem;
+  width: 13rem;
 }
 
 .sidebar-getupdate-form{
@@ -60,4 +59,68 @@
 
 input[type="email"]::placeholder {
   text-align: center;
+}
+
+/* @media screen and (min-device-width: 1281px) and (max-device-width: 1366px) { 
+
+  .sidebar-search-form {
+    margin-top: 5rem;
+  }
+
+  .sidebar-p {
+    font-size: 1rem;
+  }
+  .sidebar-h3 {
+    font-size: 1.6rem;
+  }
+  .sidebar-getUpdate {
+    margin-top: 2rem;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+} */
+
+@media only screen and (max-width: 768px) {
+  .sidebar-getUpdate {
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .sidebar-search-form {
+    background-color: #9e9e9e2e;
+  padding-top: 2rem;
+  margin-top: 0;
+  }
+
+  .sidebar-h3 {
+  font-size: 1.4rem;
+  }
+  .sidebar-p {
+    font-size: 1rem;
+  }
+  .sidebar-search-input {
+    height: unset;
+  }
+  .sidebar-search-btn {
+    height: 2rem;
+  }
+}
+
+@media (min-width:769px){
+  .sidebar-search-form {
+    margin-top: 5rem;
+  }
+
+  .sidebar-p {
+    font-size: 1rem;
+  }
+  .sidebar-h3 {
+    font-size: 1.4rem;
+  }
+  .sidebar-getUpdate {
+    margin-top: 2rem;
+    padding: 1rem 1rem 2rem 1rem;
+  }
 }
